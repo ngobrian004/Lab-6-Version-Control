@@ -7,8 +7,12 @@ def encode(password):
         new_password += conversion_table[i]
     return new_password
 
-def decode():
-    pass
+def decode(password):
+    conversion_table = {'3': '0', '4': '1', '5': '2', '6': '3', '7': '4', '8': '5', '9': '6', '0': '7', '1': '8', '2': '9'}
+    original_password = ''
+    for i in password:
+        original_password += conversion_table[i]
+    return original_password
 
 if __name__ == "__main__":
     loop = True
