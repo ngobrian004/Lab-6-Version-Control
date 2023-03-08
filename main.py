@@ -1,7 +1,7 @@
 # Brian Ngo
 
 def encode(password):
-    conversion_table = {"0": "3", '1': "4", '2': "5", '3': "6", '4': "7", '5': "8", '6': "9", '7': "0", '8': "1", '9': "2",}
+    conversion_table = {"0": "3", "1": "4", "2": "5", "3": "6", "4": "7", "5": "8", "6": "9", "7": "0", "8": "1", "9": "2",}
     new_password = ""
     for i in password:
         new_password += conversion_table[i]
